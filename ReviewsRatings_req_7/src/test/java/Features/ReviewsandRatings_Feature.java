@@ -17,17 +17,17 @@ public class ReviewsandRatings_Feature {
     {
         RRP = new ReviewsandRatings_page(Driver);
         RPA = new ReviewsandRatings_Assert_page(Driver);
-        Driver.get("https://app.almentor.net/viewer/Cleopatra-The-Truth-Revealed?orderId=20250430201247294616");
+        Driver.get("Course_bage_link");
     }
 
     @Test (priority = 0)
     void login() throws InterruptedException
     {
         RRP.Clicklog();
-        RRP.entemail("mmm13579114@gmail.com");
+        RRP.entemail("EXAMPLE@.com");
         RRP.clicklogin2();
         Thread.sleep(3000);
-        RRP.entpassword("Testforal12345");
+        RRP.entpassword("PASSWORD");
         RRP.clicklogin2();
         RRP.clickstart();
 
